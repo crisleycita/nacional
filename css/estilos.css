@@ -1,0 +1,168 @@
+body {
+	box-sizing:border-box;
+	font-family:Arial, Helvetica, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height:100vh;
+}
+
+.objet{
+	width: 700px;
+	height: 234px;
+	background: url(../images/img1.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	transition-property: background;
+	transition-duration: 1s;
+}
+
+.objet:hover{
+	background: url(../images/img2.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+form {
+	
+	background-color: rgba(0, 204, 0, 0.462);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.589);
+	padding:2px 10px 5PX 5PX;
+	border-radius: 25px;
+	display: flex;
+	flex-direction:column;
+	text-align:left;
+	width:350px;
+	
+}
+
+form h2{
+	font-size: 35px;
+	color:#000;
+	margin: 0;
+}
+
+form p{
+	font-size: 16px;
+	color:#933;
+	margin-bottom:35px;
+}
+
+.input-wrapper{
+	position:relative;
+	width:300px;
+	margin-bottom:2px;
+}
+
+input {
+	color:#000000;
+	padding: 10px 15px 5px 30px;
+	width:100%;
+	border-radius:25px;
+	border:0;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.526)
+	outline: none;
+	font-size: 14px;
+}
+
+input::placeholder {
+	font-size:18PX;
+	color:rgb(0, 0, 0);
+}
+.input-icon{
+	position:absolute;
+	height:30px;
+	width:30px;
+	left:20px;
+	top:50%;
+	transform:translateY(-55%);
+}
+
+.btn{
+	padding:20px;
+	background:linear-gradient(
+	90deg,
+	rgba(140, 43, 231, 1)25%,
+	rgba(61, 1, 245, 1)100%);
+	box-shadow:0 0 20px rgb(192, 203, 251, 0.7);
+	color:#ffffff;
+	text-transform:uppercase;
+	font-size:16px;
+	cursor:pointer;
+}
+
+.btn:hover{
+	background:rgb(9, 152, 26);
+}
+.btn2{
+	background:linear-gradient(
+	90deg,
+	rgb(0, 0, 0)25%,
+	rgb(0, 0, 0)100%);
+	box-shadow:0 0 20px rgb(192, 203, 251, 0.7);
+	color:#ffffff;
+	text-transform:uppercase;
+	font-size:9px;
+	cursor:pointer;
+	padding: 10px;
+	width:100%;
+	border-radius:25px;
+	border:0;
+	transition: transform .4s;
+}
+
+.btn2:hover{
+	background:rgb(1, 246, 111);
+	color:#000000;
+	text-transform:uppercase;
+	transform: scale(1.2,1.2) ;
+}
+.zoom{
+	transition: transform .4s;
+	}
+.zoom:hover{
+	transform: scale(1.2,1.2) ;
+	}
+
+.success{
+	position:fixed;
+	top:50px;
+	color:rgb(0, 204, 0);
+	font-size:18px;
+}
+
+.error{
+	position:fixed;
+	top:50px;
+	color:#F00;
+	font-size:18px;
+}
+
+.contenedor{
+	display: flex;
+}
+
+@media(max-width:991px) {
+	body {
+	padding:10px;
+}
+	from {
+	padding:20px;
+	width:100%;
+}
+
+	.input-wrapper{
+		position:relative;
+		width:88%;
+		margin-bottom:35px;
+}
+
+input{
+		padding:20px 0px 20px 45px;
+}
+
+.input-icon{
+	height:20px;
+	width:20px;
+}
+}
